@@ -110,6 +110,35 @@
       left: 0;
       z-index: -1;
     }
+
+    /* Estilos do Formulário */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+    input, textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    button {
+      padding: 12px 25px;
+      background: #00aaff;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+    }
+    button:hover {
+      background: #ffaa00;
+      transform: scale(1.05);
+    }
   </style>
 </head>
 <body>
@@ -126,16 +155,13 @@
   </header>
 
   <section data-aos="fade-up">
-    <img src="eu.jpg" alt="Sua Foto">
+    <img src="eu.png" alt="Sua Foto">
     <h2>Sobre Mim:</h2>
-    <p>Olá! Meu nome é Kauê, tenho 21 anos, moro em SBCampo e sou formado em ADS. Nunca trabalhei na área mas estou à procura de uma oportunidade. Tenho experiência em HTML, Python e CSS.</p>
+    <p>Tenho 21 anos e sou natural de São Bernardo do Campo (SBCampo). Sou formado em Análise e Desenvolvimento de Sistemas (ADS) e, embora ainda não tenha trabalhado formalmente na área, estou à procura de uma oportunidade para colocar meus conhecimentos em prática.</p>
 
     <h2>O que eu faço?</h2>
-    <p>Atualmente estou desempregado, mas procuro serviço na minha área de formação técnica, ajudando pessoas e empresas a atingir suas metas e colaborar no que for necessário.</p>
+    <p>Atualmente, estou em busca de uma oportunidade na área de Análise e Desenvolvimento de Sistemas (ADS). Embora esteja desempregado no momento, estou focado em aplicar meus conhecimentos técnicos para ajudar pessoas e empresas a atingirem seus objetivos.</p>
 
-    <h2>Contato</h2>
-    <p>Email: kaue.santosbarros04@gmail.com</p>
-    <p>Telefone: (11) 98730-8975</p>
     <div style="text-align: center; margin-top: 30px;">
       <a href="curriculo-kaue.pdf" download class="button">📄 Baixar Currículo</a>
     </div>
@@ -146,6 +172,15 @@
       <a href="https://www.linkedin.com/in/kauuues/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
       <a href="https://github.com/kauuues" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
     </div>
+
+    <!-- Formulário de Contato -->
+    <h2>Entre em Contato</h2>
+    <form action="mailto:kaue.santosbarros04@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu email" required>
+      <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
 
     <div style="text-align:center;" data-aos="fade-up" data-aos-delay="600">
       <a href="mailto:kaue.santosbarros04@gmail.com" class="button">Fale Comigo</a>
